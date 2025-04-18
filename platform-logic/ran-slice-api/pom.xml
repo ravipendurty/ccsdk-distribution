@@ -8,7 +8,7 @@
         <version>1.7.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>platform-logic-ranSlice</artifactId>
+    <artifactId>platform-logic-ranslice</artifactId>
     <packaging>pom</packaging>
 
     <name>ccsdk-distribution :: ${project.artifactId}</name>
