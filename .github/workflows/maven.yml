@@ -47,7 +47,6 @@ jobs:
         run: |
           IMAGES=(
             onap/ccsdk-alpine-j11-image:1.7-SNAPSHOT-latest
-            ghcr.io/$OWNER/image-two
           )
           for IMAGE in "${IMAGES[@]}"; do
             echo "$IMAGE"
