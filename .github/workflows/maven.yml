@@ -38,6 +38,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file ${GITHUB_WORKSPACE}/alpine/java11/pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/ravipendurty/ccsdk-distribution -DskipTests=true -Pdocker
 
+      - name: Print Docker images
+        run: docker images
+        
       - name: Log in to GHCR
         run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
