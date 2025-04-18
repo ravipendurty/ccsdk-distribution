@@ -87,7 +87,7 @@
         </dependency>
         <dependency>
             <groupId>org.onap.ccsdk.sli.core</groupId>
-            <artifactId>slipluginutils-installer</artifactId>
+            <artifactId>sliPluginUtils-installer</artifactId>
             <version>${ccsdk.sli.version}</version>
             <type>zip</type>
             <classifier>repo</classifier>
@@ -178,14 +178,14 @@
         </dependency>
         <dependency>
             <groupId>org.onap.ccsdk.sli.northbound</groupId>
-            <artifactId>asdcapi-installer</artifactId>
+            <artifactId>asdcApi-installer</artifactId>
             <version>${ccsdk.sli.version}</version>
             <type>zip</type>
             <classifier>repo</classifier>
         </dependency>
         <dependency>
             <groupId>org.onap.ccsdk.sli.northbound</groupId>
-            <artifactId>datachange-installer</artifactId>
+            <artifactId>dataChange-installer</artifactId>
             <version>${ccsdk.sli.version}</version>
             <type>zip</type>
             <classifier>repo</classifier>
