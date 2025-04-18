@@ -10,6 +10,9 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
+    env:
+      GH_PAT: ${{ secrets.GH_PAT }}
+
     permissions:
       contents: read
       packages: write  # Needed for both Maven deploy & GHCR push
