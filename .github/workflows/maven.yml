@@ -1,9 +1,10 @@
 name: Build, Deploy Maven Artifacts & Push Docker Images
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - newdelhi
+      - newdelhi-ios-mcn
 
 jobs:
   build-deploy:
