@@ -49,7 +49,7 @@ jobs:
           OWNER: ${{ github.repository_owner }}
         run: |
           IMAGES=(
-            onap/ccsdk-alpine-j11-image:1.7-SNAPSHOT-latest
+            onap/ccsdk-odlsli-alpine-image:1.7.1-SNAPSHOT-latest
           )
           for IMAGE in "${IMAGES[@]}"; do
             echo "$IMAGE"
