@@ -36,7 +36,7 @@ jobs:
       - name: Build and Deploy Maven Artifacts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file ${GITHUB_WORKSPACE}/alpine/java11/pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/ravipendurty/ccsdk-distribution -DskipTests=true -Pdocker
+        run: mvn -s ${GITHUB_WORKSPACE}/settings.xml --file ${GITHUB_WORKSPACE}/pom.xml deploy -DaltDeploymentRepository=github::default::https://maven.pkg.github.com/ravipendurty/ccsdk-distribution -DskipTests=true -Pdocker
 
       - name: Print Docker images
         run: docker images
