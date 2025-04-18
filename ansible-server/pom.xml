@@ -26,7 +26,7 @@
 		<ccsdk.distribution.version>${project.version}</ccsdk.distribution.version>
 		<maven.build.timestamp.format>yyyyMMdd'T'HHmmss'Z'</maven.build.timestamp.format>
         <docker.verbose>true</docker.verbose>
-        <docker.skip.push>false</docker.skip.push>
+        <docker.skip.push>true</docker.skip.push>
     </properties>
 
     <build>
